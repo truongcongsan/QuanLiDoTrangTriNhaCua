@@ -9,12 +9,6 @@
 	  }
 	   ?>
 <?php 
-	// if(!isset($_GET['proid']) || $_GET['proid'] == NULL){
- //        echo "<script> window.location = '404.php' </script>";
-        
- //    }else {
- //        $id = $_GET['proid']; // Lấy productid trên host
- //    }
     $id = Session::get('customer_id');
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['save'])){
         // LẤY DỮ LIỆU TỪ PHƯƠNG THỨC Ở FORM POST
@@ -53,10 +47,7 @@
 
     			<td><input type="text" name="name" value="<?php echo $result['name']; ?>"></td>
     		</tr>
-    		<!-- <tr>
-    			<td>City</td>
-    			<td>:</td>
-                <td><input type="text" name="name" value="<?php echo $result['city']; ?>"></td>
+    		<?php echo $result['city']; ?>"></td>
     			
     		</tr> -->
     		<tr>
@@ -65,10 +56,7 @@
                 <td><input type="text" name="phone" value="<?php echo $result['phone']; ?>"></td>
     			
     		</tr>
-    		<!-- <tr>
-    			<td>Country</td>
-    			<td>:</td>
-    			<td><?php echo $result['country']; ?></td>
+    		<?php echo $result['country']; ?></td>
     		</tr> -->
     		<tr>
     			<td>Zipcode</td>

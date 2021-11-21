@@ -50,7 +50,7 @@
 					 <h2><?php echo $result['productName'] ?></h2>
 					 <p><?php echo $fm->textShorten($result['product_desc'],50) ?></p>
 					 <p><span class="price"><?php echo $result['price'].' VND' ?></span></p>
-				     <div class="button"><span><a href="details.php?proid=<?php echo $result['productId']; ?>" class="details">Details</a></span></div>
+				     <div class="button"><span><a href="details.php?proid=<?php echo $result['productId']; ?>" class="details">Chi tiết</a></span></div>
 				</div>
 				<?php 
 				}

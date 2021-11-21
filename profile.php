@@ -27,7 +27,7 @@
     	<div class="section group">
     		<div class="content_top">
     		<div class="heading">
-    		<h3>Profile Customer</h3>
+    		<h3>HỒ SƠ KHÁCH HÀNG</h3>
     		</div>
     		<div class="clear"></div>
     	</div>
